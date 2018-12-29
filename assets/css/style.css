@@ -66,6 +66,7 @@ body {
     line-height: 1.6em;
     color: #56576e;
     margin: 0;
+    background: url(../img/bg.png) no-repeat center -50px #fff;
 }
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
 
@@ -77,7 +78,6 @@ input:-webkit-autofill:focus {
 
 /* Nav bar Style*/
 nav{
-    height: 100px;
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     transition: height 0.3s;
@@ -98,7 +98,6 @@ nav .navbar-brand span{
 }
 
 nav.scroll{
-    height: 74px;
     background: #FFFFFF !important;
 }
 
@@ -133,21 +132,21 @@ nav .navbar-nav .nav-item.active a{
 /*Responsive*/
 @media only screen and (max-width: 576px) {
     .navbar-collapse{
-        background: #c82333;
+        background: #FFFFFF;
         padding: .5rem 1rem;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     .navbar-collapse{
-        background: #c82333;
+        background: #FFFFFF;
         padding: .5rem 1rem;
     }
 }
 
 @media only screen and (min-width: 768px) and  (max-width: 992px) {
     .navbar-collapse{
-        background: #c82333;
+        background: #FFFFFF;
         padding: .5rem 1rem;
     }
 }
