@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------
+Main Style For Landing Page
+----------------------------------------------------------------
+CSS Index
+================================================================
+1. Google Font
+2. Theme Default CSS
+3. Helper Class
+4. Main Menu Area
+================================================================
+*/
+
+/*==============================================================
+1. Google Font
+================================================================*/
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800');
+
+/*==============================================================
+2. Theme Default CSS
+================================================================*/
+
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    color: #56576e;
+}
+
+input:focus,
+button:focus,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #F06E6C;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: #F06E6C;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #56576e;
+    margin: 0;
+}
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+/* Nav bar Style*/
+nav{
+    height: 100px;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.navbar{
+    padding: 0;
+}
+nav .nav-top{
+    width: 100%;
+    padding: .5rem 1rem;
+}
+nav .navbar-brand img{
+    height: 48px;
+}
+nav .navbar-brand span{
+    color: #F06E6C;
+    font-weight: bold;
+}
+
+nav.scroll{
+    height: 74px;
+    background: #FFFFFF !important;
+}
+
+nav .navbar-nav .nav-item a{
+    font-weight: 600;
+}
+
+nav .navbar-nav .nav-item.active a{
+    color: #F06E6C;
+}
+
+.navbar-menu-icon{
+    font-size: 30px;
+    color: #F06E6C;
+}
+.navbar-toggler{
+    float: right;
+    margin: .5rem;
+}
+
+
+
+#home{
+    margin: 100px 0 0 0;
+    padding: 80px 0 80px 0;
+}
+
+#home .hero{
+    text-align: center;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 576px) {
+    .navbar-collapse{
+        background: #c82333;
+        padding: .5rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .navbar-collapse{
+        background: #c82333;
+        padding: .5rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and  (max-width: 992px) {
+    .navbar-collapse{
+        background: #c82333;
+        padding: .5rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and  (max-width: 1200px) {
+
+}
+
