@@ -29,7 +29,7 @@
                 <div class="nav-top">
                     <a class="navbar-brand" href="#">
                         <img src="assets/img/logo.png" alt="Ravi Kumar Patel">
-                        <span>UI/UX Designer</span>
+                        <span>Designer</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-menu-icon">
@@ -62,9 +62,13 @@
     <section id="home">
         <div class="hero">
             <h1 class="name">
-                Hi! I am Ravi <i class="fas fa-igloo"></i>
+                Hi! I am Ravi Kumar Patel
             </h1>
-            <h4 class="skills">UI/UX Designer | Graphic Designer</h4>
+            <div id="typed-strings">
+                <span>UI/UX Designer</span>
+                <span>Web Designer</span>
+            </div>
+            <h4 class="skills"><span id="typed"></span></h4>
             <p class="intro">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nibh molestie,
             </p>
@@ -96,17 +100,7 @@
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script>
-        $(window).scroll(function () {
-            var sc = $(window).scrollTop()
-            if (sc > 50) {
-                $(".navbar").addClass("scroll")
-            } else {
-                $(".navbar").removeClass("scroll")
-            }
-        });
-    </script>
 </body>
 </html>
