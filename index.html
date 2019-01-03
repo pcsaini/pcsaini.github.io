@@ -59,8 +59,8 @@
         </nav>
     </header>
 
-    <section id="home">
-        <div class="hero">
+    <section class="hero">
+        <div class="hero-inner">
             <h1 class="name">
                 Hi! I am Ravi Kumar Patel
             </h1>
@@ -72,9 +72,10 @@
             <p class="intro">
                 Hi, I'm Ravi Kumar Patel, a self taught UI Designer final year student from IIIT Vadodara.
             </p>
+            <br>
             <div class="intro-btn">
-                <div class="btn btn-danger">Resume</div>
-                <div class="btn btn-danger">Hire Me</div>
+                <a href="#" class="btn-style">Resume</a>
+                <a href="#" class="btn-style">Hire Me</a>
             </div>
         </div>
     </section>
@@ -82,15 +83,26 @@
     <section id="works">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h4>My Works</h4>
-                </div>
-            </div>
-            <div class="row">
                 <div class="portfolio">
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="http://creek.themebucket.net/portfolio/home-page-variation/" class="thumb">
-                            <img width="750" height="469" src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="item-image" alt="1" />
+                    <div class="col-sm-6 portfolio-item">
+                        <div class="thumb">
+                            <img src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="item-image" alt="1" />
+                            <div class="portfolio-hover">
+                                <div class="portfolio-description">
+                                    <h4>Elegant Chair</h4>
+                                    <div><p>Scholarly interest in creativity involves many definitions and concepts pertaining to a number of disciplines: &#8230;</p>
+                                    </div>
+                                    <br>
+                                    <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                                    <a href="#" class="social-btn"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 portfolio-item">
+                        <a href="#" class="thumb">
+                            <img src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="item-image" alt="1" />
                             <div class="portfolio-hover">
                                 <div class="portfolio-description">
                                     <h4>Elegant Chair</h4>
@@ -101,9 +113,9 @@
                         </a>
                     </div>
 
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="http://creek.themebucket.net/portfolio/home-page-variation/" class="thumb">
-                            <img width="750" height="469" src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="item-image" alt="1" />
+                    <div class="col-sm-6 portfolio-item">
+                        <a href="#" class="thumb">
+                            <img src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="item-image" alt="1" />
                             <div class="portfolio-hover">
                                 <div class="portfolio-description">
                                     <h4>Elegant Chair</h4>
@@ -114,25 +126,12 @@
                         </a>
                     </div>
 
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="http://creek.themebucket.net/portfolio/home-page-variation/" class="thumb">
-                            <img width="750" height="469" src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="item-image" alt="1" />
+                    <div class="col-sm-6 portfolio-item">
+                        <a href="#" class="thumb">
+                            <img src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="item-image" alt="1" />
                             <div class="portfolio-hover">
                                 <div class="portfolio-description">
-                                    <h4>Elegant Chair</h4>
-                                    <div><p>Scholarly interest in creativity involves many definitions and concepts pertaining to a number of disciplines: &#8230;</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="http://creek.themebucket.net/portfolio/home-page-variation/" class="thumb">
-                            <img width="750" height="469" src="http://creek.themebucket.net/wp-content/uploads/2015/09/1.jpg" class="item-image" alt="1" />
-                            <div class="portfolio-hover">
-                                <div class="portfolio-description">
-                                    <h4>Elegant Chair</h4>
+                                    <h3>Elegant Chair</h3>
                                     <div><p>Scholarly interest in creativity involves many definitions and concepts pertaining to a number of disciplines: &#8230;</p>
                                     </div>
                                 </div>
@@ -145,21 +144,48 @@
         </div>
     </section>
 
-    <section id="contact">
+    <hr>
+
+    <section id="contact" class="pt-5 pb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h4>Contact Me</h4>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="contact-detail">
-                        <p>ravikumarpatel44@gmail.com</p>
-                        <p>E-403, Kuber Residancy, Near Badaj Cricle <br>Science City, Ahmedabad <br>Gujarat, Indaia (300060)</p>
-                        <p>+91 6357821785</p>
-                        <p>+91 6357821785</p>
-                        Socail Icons
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-2 text-center">
+                                        <span class="social-btn"><i class="far fa-envelope"></i></span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p><a href="#">ravikumarpatel44@gmail.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-2 text-center">
+                                        <span class="social-btn"><i class="fas fa-map-marker-alt"></i></span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p>E-403, Kuber Residancy, Near Badaj Cricle <br>Science City, Ahmedabad <br>Gujarat, Indaia (300060)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-2 text-center">
+                                        <span class="social-btn"><i class="fas fa-mobile"></i></span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p>+91 6358454545</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -179,10 +205,20 @@
                         <button class="btn btn-danger" type="submit">Send</button>
                     </form>
                 </div>
+                <div class="col-sm-12 text-center mt-5 mb-5">
+                    <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
+    <hr>
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -190,7 +226,7 @@
                     <a href="#">Home</a> <b>&hybull;</b> <a href="#">Works</a> <b>&hybull;</b> <a href="#">Resume</a> <b>&hybull;</b> <a href="#">Contact</a>
                 </div>
                 <div class="footer-copyright col-sm-6 text-right py-3 bg-white">© 2018 Copyright:
-                    <a href="https://mdbootstrap.com/education/bootstrap/"> Ravi Kumar Patel</a>
+                    <a href="#"> Ravi Kumar Patel</a>
                 </div>
             </div>
         </div>

@@ -35,6 +35,7 @@ a:hover {
     text-decoration: none;
     outline: none;
     color: #F06E6C;
+    cursor: pointer;
 }
 
 img {
@@ -66,7 +67,6 @@ body {
     line-height: 1.6em;
     color: #56576e;
     margin: 0;
-    background: url(../img/bg.png) no-repeat center -50px #fff;
 }
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
 
@@ -77,11 +77,6 @@ input:-webkit-autofill:focus {
 }
 
 /* Nav bar Style*/
-nav{
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    transition: height 0.3s;
-}
 .navbar{
     padding: 0;
 }
@@ -99,6 +94,8 @@ nav .navbar-brand span{
 
 nav.scroll{
     background: #FFFFFF !important;
+    -webkit-transition: all 0.5s 0.3s;
+    transition: all 0.5s 0.3s;
 }
 
 nav .navbar-nav .nav-item a{
@@ -180,7 +177,7 @@ nav .navbar-nav .nav-item.active a{
 /*----------------------------*/
 
 .portfolio {
-    margin: 10px 0 80px 0;
+    margin: 40px 0 20px 0;
 }
 
 .portfolio .portfolio-item {
@@ -197,6 +194,7 @@ nav .navbar-nav .nav-item.active a{
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 20px;
 }
 
 .portfolio-hover {
@@ -206,13 +204,14 @@ nav .navbar-nav .nav-item.active a{
     bottom: 0;
     right: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(0, 0, 0, 0.70);
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 
@@ -243,6 +242,7 @@ nav .navbar-nav .nav-item.active a{
     -webkit-transition: all 0.3s 0.2s;
     transition: all 0.3s 0.2s;
     padding: 10%;
+    text-align: center;
 
 }
 
@@ -252,12 +252,12 @@ nav .navbar-nav .nav-item.active a{
 .portfolio-description h4 a,
 .portfolio-hover .action-btn a {
     /*text-align: center;*/
-    color: #fff;
+    color: #F06E6C;
 }
 
 .portfolio-description h4 {
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
@@ -265,14 +265,103 @@ nav .navbar-nav .nav-item.active a{
 
 .portfolio-description p {
     font-size:12px;
+    font-weight: 700;
     margin-bottom: 0;
-    font-weight: normal;
     color: #fff;
     line-height: 20px;
 }
 
-.portfolio-description a,
-.portfolio-title a {
-    color: #fff;
+.btn-style{
+    /* reset */
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    /* styles */
+    position: relative;
+    background: linear-gradient(90deg, #F06E6C 10%, #d01916 90%);
+    background-size: 200% 100%;
+    padding: .5rem 2rem;
+    color: white !important;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .3s;
 }
 
+.btn-style:hover {
+    -webkit-animation: bruh 3s linear infinite;
+    animation: bruh 3s linear infinite;
+}
+
+.social-btn{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(90deg, #F06E6C 10%, #d01916 90%);
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    border-radius: 50%;
+}
+
+.social-btn:hover {
+    -webkit-animation: bruh 3s linear infinite;
+    animation: bruh 3s linear infinite;
+    color: #FFFFFF !important;
+}
+
+@-webkit-keyframes bruh {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes bruh {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.hero {
+    /* Sizing */
+    width: 100%;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+
+    /* Background styles */
+    background: url(../img/bg.png) no-repeat center -50px #fff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-detail p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
