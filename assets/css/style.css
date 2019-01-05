@@ -88,6 +88,7 @@ nav .navbar-brand img{
 }
 nav .navbar-brand span{
     color: #FA8D99;
+    font-family: 'Redressed', sans-serif;
 }
 
 nav.scroll{
@@ -308,6 +309,37 @@ nav .navbar-nav .nav-item.active a{
 #resume{
     padding-top: 40px;
     border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#resume .education-item{
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0 0 20px 0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#resume .skills .skill-item{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 10px 10px 10px 0px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#resume .skills span{
+    font-size: 1.3rem;
+}
+
+#resume .hobby .hobby-item{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 10px 10px 10px 0px;
+    border-radius: 50px;
+    box-sizing: border-box;
 }
 
 .title{

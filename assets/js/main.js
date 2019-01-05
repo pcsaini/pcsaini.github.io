@@ -23,9 +23,7 @@ $(window).scroll(function () {
 document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
-        // typing speed
         typeSpeed: 60,
-        // backspacing speed
         backSpeed: 30,
         loop: true,
         loopCount: Infinity,
