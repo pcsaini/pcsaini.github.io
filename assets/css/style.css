@@ -7,6 +7,8 @@ CSS Index
 2. Theme Default CSS
 3. Helper Class
 4. Main Menu Area
+
+Main Color : 0A5588
 ================================================================
 */
 
@@ -34,7 +36,7 @@ a:focus,
 a:hover {
     text-decoration: none;
     outline: none;
-    color: #FA8D99;
+    color: #0A55DD;
     cursor: pointer;
 }
 
@@ -51,7 +53,7 @@ h5,
 h6 {
     margin: 0 0 15px;
     line-height: 1.4em;
-    color: #FA8D99;
+    color: #0A55DD;
 }
 
 html,
@@ -87,7 +89,7 @@ nav .navbar-brand img{
     height: 48px;
 }
 nav .navbar-brand span{
-    color: #FA8D99;
+    color: #0A55DD;
     font-family: 'Redressed', sans-serif;
 }
 
@@ -99,12 +101,12 @@ nav.scroll{
 }
 
 nav .navbar-nav .nav-item.active a{
-    color: #FA8D99;
+    color: #0A55DD;
 }
 
 .navbar-menu-icon{
     font-size: 30px;
-    color: #FA8D99;
+    color: #0A55DD;
 }
 .navbar-toggler{
     float: right;
@@ -152,7 +154,7 @@ nav .navbar-nav .nav-item.active a{
     text-align: center;
 
     /* Background styles */
-    background: url(../img/bg.png) no-repeat center -50px #fff;
+    /*background: url(../img/bg.png) no-repeat center -50px #fff;*/
     background-size: cover;
     background-attachment: fixed;
 }
@@ -207,7 +209,7 @@ nav .navbar-nav .nav-item.active a{
     outline: 0;
     /* styles */
     position: relative;
-    background: linear-gradient(90deg, #FA8D99 10%, #d01916 90%);
+    background: linear-gradient(90deg, #0A55DD 10%, #5CDBF7 90%);
     background-size: 200% 100%;
     padding: .5rem 2rem;
     color: white !important;
@@ -233,19 +235,19 @@ nav .navbar-nav .nav-item.active a{
     padding: 0;
     text-decoration: none;
     text-align: center;
-    color: #FA8D99;
+    color: #0A55DD;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.2rem;
     border-radius: 5px;
-    border: 1px solid #FA8D99;
+    border: 1px solid #0A55DD;
 }
 
 .social-btn:hover, .social-btn:focus, .social-btn:active {
     animation: bruh 3s linear infinite;
     color: #FFFFFF !important;
-    border: 1px solid #FA8D99;
-    background: #FA8D99;
+    border: 1px solid #0A55DD;
+    background: #0A55DD;
 }
 
 .social-btn-inverse{
@@ -270,8 +272,8 @@ nav .navbar-nav .nav-item.active a{
 .social-btn-inverse:hover, .social-btn-inverse:focus, .social-btn-inverse:active {
     animation: bruh 3s linear infinite;
     color: #FFFFFF !important;
-    border: 1px solid #FA8D99;
-    background: #FA8D99;
+    border: 1px solid #0A55DD;
+    background: #0A55DD;
 }
 
 @-webkit-keyframes bruh {
@@ -301,14 +303,30 @@ nav .navbar-nav .nav-item.active a{
 
 /*Form Css*/
 .form-control:focus{
-    border-color: #FA8D99;
+    border-color: #0A55DD;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(240, 110, 108,.25);
 }
 
 #resume{
-    padding-top: 40px;
-    border-top: 1px solid rgba(0,0,0,.1);
+    padding-top: 100px;
+}
+.title{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bolder;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+}
+.title:before {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #0A55DD;
+    margin-right: 8px;
 }
 
 #resume .education-item{
@@ -342,16 +360,17 @@ nav .navbar-nav .nav-item.active a{
     box-sizing: border-box;
 }
 
-.title{
+/*.title{
     font-family: 'Redressed', sans-serif;
-}
+}*/
 
 #social-icons{
     border-top: 1px solid rgba(0,0,0,.1);
 }
 
 #contact{
-    border-top: 1px solid rgba(0,0,0,.1);
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
 .contact-detail p{
@@ -368,8 +387,7 @@ nav .navbar-nav .nav-item.active a{
 Works Style
 */
 #works{
-    padding-top: 40px;
-    border-top: 1px solid rgba(0,0,0,.1);
+    padding-top: 100px;
 }
 
 figure.item {
@@ -379,7 +397,7 @@ figure.item {
     width: 100%;
     text-align: center;
     background: #000000;
-    border-radius: 20px;
+    border-radius: 4px;
 }
 figure.item * {
     -webkit-box-sizing: border-box;
@@ -409,8 +427,8 @@ figure.item figcaption::before {
     right: 30px;
     bottom: 50%;
     left: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    /*border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);*/
     content: '';
     opacity: 0;
     background-color: #ffffff;
@@ -442,4 +460,9 @@ figure.item:hover figcaption::before {
     opacity: 1;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
+}
+@media only screen and (max-width: 576px) {
+    .footer-menu, .footer-copyright{
+        text-align: center;
+    }
 }
