@@ -90,7 +90,6 @@ nav .navbar-brand img{
 }
 nav .navbar-brand span{
     color: #0A55DD;
-    font-family: 'Redressed', sans-serif;
 }
 
 nav.scroll{
@@ -211,16 +210,17 @@ nav .navbar-nav .nav-item.active a{
     position: relative;
     background: linear-gradient(90deg, #0A55DD 10%, #5CDBF7 90%);
     background-size: 200% 100%;
-    padding: .5rem 2rem;
+    padding: .8rem 2rem;
     color: white !important;
     border-radius: 100px;
     font-size: 1rem;
     transition: .3s;
     cursor: pointer;
+    margin: .5rem;
 }
 
 .btn-style:hover {
-    -webkit-animation: bruh 3s linear infinite;
+    -webkit-animation: 3s linear infinite;
     animation: bruh 3s linear infinite;
 }
 
@@ -244,6 +244,7 @@ nav .navbar-nav .nav-item.active a{
 }
 
 .social-btn:hover, .social-btn:focus, .social-btn:active {
+    -webkit-animation: 3s linear infinite;
     animation: bruh 3s linear infinite;
     color: #FFFFFF !important;
     border: 1px solid #0A55DD;
@@ -270,6 +271,7 @@ nav .navbar-nav .nav-item.active a{
 }
 
 .social-btn-inverse:hover, .social-btn-inverse:focus, .social-btn-inverse:active {
+    -webkit-animation: 3s linear infinite;
     animation: bruh 3s linear infinite;
     color: #FFFFFF !important;
     border: 1px solid #0A55DD;
@@ -281,7 +283,7 @@ nav .navbar-nav .nav-item.active a{
         background-position: 0 0;
     }
     50% {
-        background-position: 100% 0;
+        background-position: 0 0;
     }
     100% {
         background-position: 0 0;
@@ -293,7 +295,7 @@ nav .navbar-nav .nav-item.active a{
         background-position: 0 0;
     }
     50% {
-        background-position: 100% 0;
+        background-position: 0 0;
     }
     100% {
         background-position: 0 0;
@@ -305,7 +307,7 @@ nav .navbar-nav .nav-item.active a{
 .form-control:focus{
     border-color: #0A55DD;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(240, 110, 108,.25);
+    box-shadow: 0 0 0 0.2rem rgba(10, 85, 221,.25);
 }
 
 #resume{
@@ -333,9 +335,9 @@ nav .navbar-nav .nav-item.active a{
     padding: 10px;
     border: 1px solid rgba(0,0,0,.1);
     margin: 0 0 20px 0;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.1);
     border-radius: 10px;
     box-sizing: border-box;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.1);
 }
 
 #resume .skills .skill-item{
@@ -343,8 +345,9 @@ nav .navbar-nav .nav-item.active a{
     padding: 10px;
     border: 1px solid rgba(0,0,0,.1);
     margin: 10px 10px 10px 0px;
-    border-radius: 50px;
+    border-radius: 8px;
     box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.1);
 }
 
 #resume .skills span{
@@ -356,8 +359,9 @@ nav .navbar-nav .nav-item.active a{
     padding: 10px;
     border: 1px solid rgba(0,0,0,.1);
     margin: 10px 10px 10px 0px;
-    border-radius: 50px;
+    border-radius: 8px;
     box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0,0,0,.1);
 }
 
 /*.title{
@@ -431,7 +435,6 @@ figure.item figcaption::before {
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);*/
     content: '';
     opacity: 0;
-    background-color: #ffffff;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     -webkit-transition-delay: 0.6s;
